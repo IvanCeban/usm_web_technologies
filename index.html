@@ -12,7 +12,9 @@
 
 <body>
     <header class="header">
-        <img class="logo" src="img/logo.png" alt="Logo">
+        <a href="#">
+            <img class="logo" src="img/logo.png" alt="Logo">
+        </a>
         <nav class="navigation">
             <a class="nav-link active" href="/">Create</a>
             <span class="divider">|</span>
@@ -24,8 +26,12 @@
     <main class="main">
         <div class="wrapper">
             <h1>Creat a new ToDo Task</h1>
-            <form action="">
-                Here will be a form
+            <form class="form" action="">
+                <label for="task">Task:</label>
+                <input class="input" type="text" id="task" name="task">
+                <label for="description">Description:</label>
+                <textarea class="textarea" type="text" id="description" name="description"></textarea>
+                <button class="btn" type="submit">Save</button>
             </form>
         </div>
     </main>

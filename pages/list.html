@@ -12,7 +12,9 @@
 
 <body>
     <header class="header">
-        <img class="logo" src="../img/logo.png" alt="Logo">
+        <a href="../index.html">
+            <img class="logo" src="../img/logo.png" alt="Logo">
+        </a>
         <nav class="navigation">
             <a class="nav-link" href="../index.html">Create</a>
             <span class="divider">|</span>
@@ -24,24 +26,30 @@
     <main class="main">
         <div class="wrapper">
             <h1>ToDo History</h1>
-            <form action="">
-                <ul>
-                    <li>
-                        <input type="checkbox" name="todo-item" value="todo-val"> ToDo Task name
+            <form action="" class="form">
+                <ul class="tasks-list">
+                    <li class="list-item">
+                        <input type="checkbox" name="todo-item" id="todo-item_1" value="todo-item_1">
+                        <label for="todo-item_1">Go to school</label>
                     </li>
-                    <li>
-                        <input type="checkbox" name="todo-item" value="todo-val"> ToDo Task name
+                    <li class="list-item">
+                        <input type="checkbox" name="todo-item" id="todo-item_2" value="todo-item_2">
+                        <label for="todo-item_2">Learn to read</label>
                     </li>
-                    <li>
-                        <input type="checkbox" name="todo-item" value="todo-val"> ToDo Task name
+                    <li class="list-item">
+                        <input type="checkbox" name="todo-item" id="todo-item_3" value="todo-item_3">
+                        <label for="todo-item_3">Learn to write</label>
                     </li>
-                    <li>
-                        <input type="checkbox" name="todo-item" value="todo-val"> ToDo Task name
+                    <li class="list-item">
+                        <input type="checkbox" name="todo-item" id="todo-item_4" value="todo-item_4">
+                        <label for="todo-item_4">Start to code</label>
                     </li>
-                    <li>
-                        <input type="checkbox" name="todo-item" value="todo-val"> ToDo Task name
+                    <li class="list-item">
+                        <input type="checkbox" name="todo-item" id="todo-item_5" value="todo-item_5">
+                        <label for="todo-item_5">Become a developer</label>
                     </li>
                 </ul>
+                <button class="btn" type="submit">Save</button>
             </form>
         </div>
     </main>

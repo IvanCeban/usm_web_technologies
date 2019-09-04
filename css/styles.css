@@ -1,6 +1,9 @@
 * {
     box-sizing: border-box;
 }
+:root {
+    --brand-color: #6255e3;
+}
 body {
     background-color: #dedede;
     font-family: 'Lato', sans-serif;
@@ -8,6 +11,18 @@ body {
     flex-direction: column;
     min-height: 100vh;
     margin: 0;
+}
+.btn {
+    font-size: 18px;
+    border-radius: 3px;
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    background-color: rgba(98, 85, 227, .7);
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: var(--brand-color);
 }
 .header {
     background-color: #fafafa;
@@ -30,9 +45,10 @@ body {
 }
 .navigation .nav-link:hover {
     font-weight: bold;
+    color: var(--brand-color);
 }
 .navigation .nav-link.active {
-    color: purple;
+    color: var(--brand-color);
     font-weight: bold;
 }
 .navigation .divider {
@@ -46,10 +62,71 @@ body {
     flex: 1;
 }
 .main .wrapper {
+    width: 40%;
+    padding: 30px;
+    border-radius: 3px;
     background-color: #fafafa;
-    padding: 20px;
 }
-
+.main .wrapper h1 {
+    margin: 0 0 30px;
+    text-align: center;
+    color:  var(--brand-color);
+}
+.main .wrapper .form {
+    display: flex;
+    flex-direction: column;
+}
+.main .wrapper .form .btn {
+    margin: 20px 0 0 auto;
+}
+.main .wrapper .form .input,
+.main .wrapper .form .textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid gray;
+    margin-top: 5px;
+}
+.main .wrapper .form .input {
+    height: 40px;
+    margin-bottom: 15px;
+}
+.main .wrapper .form .textarea {
+    height: 100px;
+}
+.main .wrapper .form label {
+    color: gray;
+}
+.main .wrapper .tasks-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.main .wrapper .tasks-list .list-item {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+.main .wrapper .tasks-list .list-item:not(:last-child) {
+    margin-bottom: 10px;
+}
+.main .wrapper .tasks-list .list-item input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    cursor: pointer;
+}
+.main .wrapper .tasks-list .list-item label {
+    margin-left: 15px;
+    cursor: pointer;
+}
+.main .wrapper .tasks-list.completed .list-item {
+    text-decoration: line-through;
+}
+.main .wrapper .tasks-list.completed .list-item .check-icn {
+    width: 20px;
+    margin-right: 20px;
+}
 .footer {
     padding: 10px;
     text-align: right;
