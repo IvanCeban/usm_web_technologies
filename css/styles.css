@@ -12,18 +12,7 @@ body {
     min-height: 100vh;
     margin: 0;
 }
-.btn {
-    font-size: 18px;
-    border-radius: 3px;
-    padding: 10px 20px;
-    border: none;
-    color: white;
-    background-color: rgba(98, 85, 227, .7);
-    cursor: pointer;
-}
-.btn:hover {
-    background-color: var(--brand-color);
-}
+
 .header {
     background-color: #fafafa;
     display: flex;
@@ -72,24 +61,44 @@ body {
     text-align: center;
     color:  var(--brand-color);
 }
+
+.footer {
+    padding: 10px;
+    text-align: right;
+    border-top: 1px solid white;
+}
+
+/* ========== FORM ============= */
+
 .main .wrapper .form {
     display: flex;
     flex-direction: column;
 }
 .main .wrapper .form .btn {
     margin: 20px 0 0 auto;
+    font-size: 18px;
+    border-radius: 3px;
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    background-color: rgba(98, 85, 227, .7);
+    cursor: pointer;
+}
+.main .wrapper .form .btn:hover {
+    background-color: var(--brand-color);
 }
 .main .wrapper .form .input,
-.main .wrapper .form .textarea {
+.main .wrapper .form .textarea,
+.main .wrapper .form .priority-select {
     width: 100%;
     padding: 10px;
     border-radius: 3px;
     border: 1px solid gray;
     margin-top: 5px;
+    margin-bottom: 15px;
 }
 .main .wrapper .form .input {
     height: 40px;
-    margin-bottom: 15px;
 }
 .main .wrapper .form .textarea {
     height: 100px;
@@ -97,6 +106,29 @@ body {
 .main .wrapper .form label {
     color: gray;
 }
+
+/* =========== PRIORITY ============== */
+
+.main .wrapper .priority-block {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid gray;
+}
+.main .wrapper .priority-block.yesterday .title {
+    color: red;
+}
+.main .wrapper .priority-block.high .title {
+    color: #ba09f1;
+}
+.main .wrapper .priority-block.medium .title {
+    color: #4189e6;
+}
+.main .wrapper .priority-block.low .title {
+    color: gray;
+}
+
+/* =========== TASKS LIST ============= */
+
 .main .wrapper .tasks-list {
     list-style: none;
     margin: 0;
@@ -132,10 +164,8 @@ body {
     width: 15px;
     margin-right: 20px;
 }
-.footer {
-    padding: 10px;
-    text-align: right;
-}
+
+/* ============= TOOLTIP ================ */
 
 /* Tooltip container */
 .tooltip {

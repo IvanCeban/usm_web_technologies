@@ -31,6 +31,14 @@
                 <input class="input" type="text" id="task" name="task">
                 <label for="description">Description:</label>
                 <textarea class="textarea" type="text" id="description" name="description"></textarea>
+                <label for="priority">Priority</label>
+                <select id="priority" name="priority" class="priority-select">
+                    <option value="none" disabled selected>Select priority</option>
+                    <option value="yesterday">Yesterday</option>
+                    <option value="high">High</option>
+                    <option value="medium">Medium</option>
+                    <option value="low">Low</option>
+                </select>
                 <button class="btn" type="submit">Save</button>
             </form>
         </div>

@@ -28,48 +28,75 @@
         <div class="wrapper">
             <h1>ToDo History</h1>
             <form action="" class="form">
-                <ul class="tasks-list">
-                    <li class="list-item">
-                        <input type="checkbox" name="todo-item" id="todo-item_1" value="todo-item_1">
-                        <label for="todo-item_1">Go to school</label>
-                        <div class="tooltip">
-                            <i class="far fa-question-circle"></i>
-                            <span class="tooltiptext">The best one</span>
-                        </div>
-                    </li>
-                    <li class="list-item">
-                        <input type="checkbox" name="todo-item" id="todo-item_2" value="todo-item_2">
-                        <label for="todo-item_2">Learn to read</label>
-                        <div class="tooltip">
-                            <i class="far fa-question-circle"></i>
-                            <span class="tooltiptext">As much as I can</span>
-                        </div>
-                    </li>
-                    <li class="list-item">
-                        <input type="checkbox" name="todo-item" id="todo-item_3" value="todo-item_3">
-                        <label for="todo-item_3">Learn to write</label>
-                        <div class="tooltip">
-                            <i class="far fa-question-circle"></i>
-                            <span class="tooltiptext">As fast as I can</span>
-                        </div>
-                    </li>
-                    <li class="list-item">
-                        <input type="checkbox" name="todo-item" id="todo-item_4" value="todo-item_4">
-                        <label for="todo-item_4">Start to code</label>
-                        <div class="tooltip">
-                            <i class="far fa-question-circle"></i>
-                            <span class="tooltiptext">As good as I can</span>
-                        </div>
-                    </li>
-                    <li class="list-item">
-                        <input type="checkbox" name="todo-item" id="todo-item_5" value="todo-item_5">
-                        <label for="todo-item_5">Become a developer</label>
-                        <div class="tooltip">
-                            <i class="far fa-question-circle"></i>
-                            <span class="tooltiptext">The best one</span>
-                        </div>
-                    </li>
-                </ul>
+                <div class="priority-block yesterday">
+                    <h4 class="title">Yesterday!!!</h4>
+                    <ul class="tasks-list">
+                        <li class="list-item">
+                            <input type="checkbox" name="todo-item" id="todo-item_1" value="todo-item_1">
+                            <label for="todo-item_1">Go to school</label>
+                            <div class="tooltip">
+                                <i class="far fa-question-circle"></i>
+                                <span class="tooltiptext">The best one</span>
+                            </div>
+                        </li>
+                        <li class="list-item">
+                            <input type="checkbox" name="todo-item" id="todo-item_2" value="todo-item_2">
+                            <label for="todo-item_2">Learn to read</label>
+                            <div class="tooltip">
+                                <i class="far fa-question-circle"></i>
+                                <span class="tooltiptext">As much as I can</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="priority-block high">
+                    <h4 class="title">Important!</h4>
+                    <ul class=" tasks-list">
+                        <li class="list-item">
+                            <input type="checkbox" name="todo-item" id="todo-item_3" value="todo-item_3">
+                            <label for="todo-item_3">Learn to write</label>
+                            <div class="tooltip">
+                                <i class="far fa-question-circle"></i>
+                                <span class="tooltiptext">As fast as I can</span>
+                            </div>
+                        </li>
+                        <li class="list-item">
+                            <input type="checkbox" name="todo-item" id="todo-item_4" value="todo-item_4">
+                            <label for="todo-item_4">Start to code</label>
+                            <div class="tooltip">
+                                <i class="far fa-question-circle"></i>
+                                <span class="tooltiptext">As good as I can</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="priority-block medium">
+                    <h4 class="title">Not so hot</h4>
+                    <ul class=" tasks-list">
+                        <li class="list-item">
+                            <input type="checkbox" name="todo-item" id="todo-item_5" value="todo-item_5">
+                            <label for="todo-item_5">Become a developer</label>
+                            <div class="tooltip">
+                                <i class="far fa-question-circle"></i>
+                                <span class="tooltiptext">The best one</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="priority-block low">
+                    <h4 class="title">Take it easy...</h4>
+                    <ul class=" tasks-list">
+                        <li class="list-item">
+                            <input type="checkbox" name="todo-item" id="todo-item_5" value="todo-item_5">
+                            <label for="todo-item_5">Have rest</label>
+                            <div class="tooltip">
+                                <i class="far fa-question-circle"></i>
+                                <span class="tooltiptext">Just joking! Go to work!!!</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
                 <button class="btn" type="submit">Save</button>
             </form>
         </div>
